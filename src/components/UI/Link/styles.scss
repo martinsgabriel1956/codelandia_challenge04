@@ -1,0 +1,15 @@
+@import '/src/styles/colors.scss';
+
+a {
+  color: $link;
+}
+
+.normal {
+  font-size: 1rem;
+  line-height: 1.0625rem;
+}
+
+.sm {
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+}

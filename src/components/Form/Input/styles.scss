@@ -1,0 +1,28 @@
+@import "/src/styles/colors.scss";
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+
+  & > label,
+  & > input {
+    font-weight: 400;
+    color: $gray;
+  }
+
+  & > label {
+    margin-bottom: 0.6875rem;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+  }
+
+  & > input {
+    height: 3.125rem;
+    padding-inline: 1.25rem;
+
+    border: 1px solid #E8E8E8;
+    border-radius: 5px;
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+  }
+}

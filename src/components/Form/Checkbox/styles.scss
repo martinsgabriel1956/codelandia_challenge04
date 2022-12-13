@@ -1,0 +1,38 @@
+@import "/src/styles/colors.scss";
+
+.checkbox-container {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+
+  display: flex;
+  align-items: center;
+  gap: 0.6875rem;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 0.9375rem;
+  height: 0.9375rem;
+  border-radius: 50%;
+  border: 1px solid $border;
+  cursor: pointer;
+
+  position: relative;
+  
+  &:checked::before {
+    content: "✓";
+    background-color: $green-light;
+    width: 0.875rem;
+    height: 0.875rem;
+    border-radius: 50%;
+
+    position: absolute;
+    top: -0.0325rem;
+    left: -0.0325rem;
+    font-size: .65rem;
+
+    text-align: center;
+    color: $white;
+  }
+}

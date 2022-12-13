@@ -1,0 +1,18 @@
+@import "/src/styles/colors.scss";
+
+.wallpaper-section {
+  background: $white-200;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+
+  & > img {
+    max-width: 25rem;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}

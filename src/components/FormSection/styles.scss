@@ -1,0 +1,64 @@
+.form-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+
+  position: relative;
+
+  padding-top: 13.3125rem;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 4.4375rem;
+  }
+
+  animation: up 1.5s ease;
+
+  @keyframes up {
+    0% {
+      bottom: -200px;
+    }
+    
+    100% {
+      bottom: 0;
+    }
+  }
+}
+
+.form-container, footer {
+  width: 21.875rem;
+}
+
+
+.heading-container {
+  padding-bottom: 2.4375rem;
+}
+
+.form-container > form > div.input-container:first-child {
+  margin-bottom: 0.6875rem;
+}
+
+.remind-me {
+  padding-top: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-bottom: 1.625rem;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+
+  & > button:last-child {
+    margin-top: 0.9375rem;
+  }
+}
+
+footer {
+  padding-bottom: 3.125rem;
+  text-align: center;
+  padding-top: 8.625rem;
+}
+
